@@ -11,7 +11,7 @@
  * new kcmerrill\tdd\phpwebunit
  */
 
-require_once __DIR__ . '/phpwebunit.php';
+require_once __DIR__ . '/../src/kcmerrill/tdd/phpwebunit.php';
 new kcmerrill\tdd\phpwebunit;
 
 class phpwebunitExamplePassingTest extends PHPUnit_Framework_TestCase {
