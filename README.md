@@ -18,3 +18,6 @@ new kcmerrill\tdd\phpwebunit(__DIR__);
 ```
 
 Here are some screenshots:
+![Screenshot](https://raw.github.com/kcmerrill/phpwebunit/master/src/kcmerrill/tdd/screenshot.png)
+
+[![Build Status](https://travis-ci.org/kcmerrill/phpwebunit.png?branch=master)](https://travis-ci.org/kcmerrill/phpwebunit)
