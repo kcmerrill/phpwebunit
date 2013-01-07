@@ -6,7 +6,7 @@ A simple green bar, or a red bar(with phpunit output) showing the issue.
 
 It's usage is pretty simple too, depending on autoloading, you can get it down to two lines per test.
 
-
+```
 //This will test the current php file
 require_once __FILE__. '/phpwebunit';
 new kcmerrill\tdd\phpwebunit;
@@ -15,6 +15,6 @@ new kcmerrill\tdd\phpwebunit;
 //This will test the current php's directory
 require_once __FILE__. '/phpwebunit';
 new kcmerrill\tdd\phpwebunit(__DIR__);
-
+```
 
 Here are some screenshots:
