@@ -1,7 +1,7 @@
 {
     "name": "kcmerrill/phpwebunit",
     "description": "A simpletest like visual for phpunit. Simple and easy to use!",
-    "keywords" : ['TDD', 'phpunit', 'simpletest' , 'web', 'wrapper'],
+    "keywords" : ["TDD", "phpunit", "simpletest" , "web", "wrapper"],
     "authors": [
         {
             "name": "kc merrill",
