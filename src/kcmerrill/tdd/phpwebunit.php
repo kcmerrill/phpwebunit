@@ -44,9 +44,9 @@ class phpwebunit implements \arrayaccess {
         'script_name' => 'SCRIPT_FILENAME'
     );
 
-    public function __construct($sut = '', $config = array()){
+    public function __construct($sut = '', $config = array(), $SERVER = false){
         $this['sapi'] = php_sapi_name();
-        $this->setSystemUnderTest($sut);
+        $this->setSystemUnderTest($sut, $SERVER);
         $this->_config = array_merge($this->_config, $config);
         if($this['sapi'] != 'cli'){
             exit;

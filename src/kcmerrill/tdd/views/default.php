@@ -20,6 +20,7 @@
         }
     </style>
     <body>
+
     <h1><?php echo basename($sut); ?></h1>
     <div class='status-bar <?php echo $result_type; ?>'>
             <?php
