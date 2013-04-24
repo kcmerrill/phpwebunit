@@ -15,7 +15,6 @@ Set your base path to say: http://test.example.com/phpwebunit/index.php/ <-- You
 In index.php have code that would look something like this:
 
 
-Another Way:
 ```
 $sot = __DIR__ . '/../../' . implode('/', $test);
 if(file_exists($sot)){
@@ -23,7 +22,7 @@ if(file_exists($sot)){
 }
 ```
 
-
+Another Way:
 ```
 //This will test the current php file
 require_once __FILE__. '/phpwebunit';
