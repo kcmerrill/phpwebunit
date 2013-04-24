@@ -4,7 +4,25 @@ Me too .. this is a simple wrapper utility that lets one use phpunit in a web br
 
 A simple green bar, or a red bar(with phpunit output) showing the issue.
 
+Here is a youtube video describing it's usage: http://www.youtube.com/watch?v=an5ZjEVTg0g
+
 It's usage is pretty simple too, depending on autoloading, you can get it down to two lines per test.
+
+Prefered Way:
+Use an IDE that has a live preview functionality. 
+
+Set your base path to say: http://test.example.com/phpwebunit/index.php/ <-- You'll need to create this.
+In index.php have code that would look something like this:
+
+
+Another Way:
+```
+$sot = __DIR__ . '/../../' . implode('/', $test);
+if(file_exists($sot)){
+    new \kcmerrill\tdd\phpwebunit('', array('bin'=>'/usr/local/php5/bin/phpunit'), array('SCRIPT_FILENAME'=>$sot));
+}
+```
+
 
 ```
 //This will test the current php file
@@ -16,6 +34,8 @@ new kcmerrill\tdd\phpwebunit;
 require_once __FILE__. '/phpwebunit';
 new kcmerrill\tdd\phpwebunit(__DIR__);
 ```
+
+
 
 Here are some screenshots:
 ![Screenshot](https://raw.github.com/kcmerrill/phpwebunit/master/examples/screenshot.png)
